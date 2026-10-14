@@ -1,6 +1,6 @@
 /// Peer is an interface that represents the remote node
 /// in a network
-pub trait Peer {}
+pub trait Peer: Send + Sync {}
 
 /// Transport is anything that handles the connection
 /// between the nodes in the network
